@@ -1,0 +1,6 @@
+/* Main CSS file, includes all partials */
+body {
+  box-sizing: border-box;
+  background-color: black;
+  overflow-y: scroll;
+  margin: 0px; }
