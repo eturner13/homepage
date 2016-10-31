@@ -1,6 +1,98 @@
-/* Main CSS file, includes all partials */
+.contentWrapper {
+  margin: 0 10% 0 10%; }
+
+.blackCont {
+  background: linear-gradient(to bottom, rgba(33, 33, 33, 0.6), rgba(0, 0, 0, 0.6));
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  border: 1px solid black;
+  margin: 10px;
+  padding: 30px; }
+
+.textCont {
+  border: 1px solid #616161;
+  background: #212121;
+  margin: 10px;
+  padding: 30px; }
+
+.flexHorz {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; }
+
+.flexVert {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between; }
+
+h1 {
+  line-height: 1em;
+  font-size: 8em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #eeeeee;
+  padding: 0; }
+
+h2 {
+  line-height: 1em;
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400; }
+
+h3 {
+  font-size: 2.5em;
+  font-family: "Montserrat", sans-serif; }
+
+h4 {
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif; }
+
+h5 {
+  font-size: .5em; }
+
+h6 {
+  font-size: .2em; }
+
+p {
+  text-align: justify;
+  font-family: "Exo 2", sans-serif;
+  line-height: 2em; }
+
+header {
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjNjE2MTYxIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIxMjEyMSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIxMjEyMSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg==");
+  width: 100%; }
+  header .cover {
+    background: linear-gradient(to bottom, transparent, #212121);
+    padding: 30px 10% 30px 10%;
+    text-align: center; }
+  header a {
+    text-decoration: none;
+    color: #616161;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    transition: color .5s, border .2s;
+    padding: 5px; }
+  header a:hover {
+    color: #eeeeee; }
+
+footer {
+  background-color: #616161; }
+
 body {
   box-sizing: border-box;
-  background-color: black;
+  background-color: #212121;
   overflow-y: scroll;
-  margin: 0px; }
+  margin: 0;
+  color: #eeeeee; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.mainPage {
+  background-color: #212121; }
+
+.blogPage {
+  background-color: #eeeeee; }
+
+/*# sourceMappingURL=main.css.map */

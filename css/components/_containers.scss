@@ -1,0 +1,23 @@
+@import '../modules/all';
+
+.contentWrapper {
+    margin: 0 10% 0 10%;
+}
+
+.blackCont {
+    background: linear-gradient(to bottom, $transWhite, $transBlack);
+    box-shadow: 1px 1px 3px $transBlack;
+        
+    border: 1px solid $trueBlack;
+        
+    margin: 10px;
+    padding: 30px;
+}
+
+.textCont {
+    border: 1px solid $color2;
+    background: $color1;
+    
+    margin: 10px;
+    padding: 30px;
+}

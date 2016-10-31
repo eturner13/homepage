@@ -1,0 +1,41 @@
+@import '../modules/all';
+
+h1 {
+    line-height: 1em;
+    font-size: 8em;
+    font-family: $mainFont;
+    font-weight: 700;
+    color: $color4;
+    padding: 0;
+}
+
+h2 {
+    line-height: 1em;
+    font-size: 3em;
+    font-family: $mainFont;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-family: $mainFont;
+}
+
+h4 {
+    font-size: 2em;
+    font-family: $mainFont;
+}
+
+h5 {
+    font-size: .5em;
+}
+
+h6 {
+    font-size: .2em;
+}
+
+p {
+    text-align: justify;
+    font-family: $textFont;
+    line-height: 2em;
+}

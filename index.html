@@ -2,10 +2,17 @@
 <html>
 <head>
 	<title>Eric G Turner - Web Design</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2|Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+	<script src="https://use.fontawesome.com/3492d6cd4b.js"></script>
+	<script src="/scripts/homeCtrl.js"></script>
+	<base href="/">
 </head>
-<body>
-	<h1>Hello, World!</h1>
+<body ng-app="homepage" ng-controller="homeCtrl">
+	<div ng-include="'/pages/header.html'"></div>
+	<div ng-view class="flexHorz"></div>
+	<div ng-include="'/pages/footer.html'"></div>
 </body>
 </html>

@@ -1,0 +1,12 @@
+.flexHorz {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flexVert {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
