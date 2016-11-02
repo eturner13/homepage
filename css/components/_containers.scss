@@ -1,7 +1,15 @@
 @import '../modules/all';
 
 .contentWrapper {
-    margin: 0 10% 0 10%;
+    margin: 0px auto 0 auto;
+    max-width: 1280px;
+    
+    align-self: center;
+}
+
+.viewWrapper {
+	background: linear-gradient(to bottom, $color1, rgba(0,0,0,0));
+	
 }
 
 .blackCont {
@@ -10,14 +18,19 @@
         
     border: 1px solid $trueBlack;
         
-    margin: 10px;
+    margin: 0px 10px 20px 10px;
     padding: 30px;
 }
 
 .textCont {
-    border: 1px solid $color2;
-    background: $color1;
+    border: 2px solid $color3;
+    border-radius: 10px;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMjEyMTIxIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");
     
+    box-shadow: inset 0px 0px 10px $color3;
+    
+    min-width: 45%;
+    height: 80%;
     margin: 10px;
     padding: 30px;
 }

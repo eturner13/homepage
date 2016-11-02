@@ -1,7 +1,9 @@
 @import '../modules/all';
 
 footer {
-
+    background-color: $color1;
     
-    background-color: $color2;
+    border-top: 2px solid $color2;
+    padding: 10px;
+    margin: 0px;
 }

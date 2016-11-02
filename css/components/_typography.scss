@@ -6,6 +6,9 @@ h1 {
     font-family: $mainFont;
     font-weight: 700;
     color: $color4;
+
+    text-shadow: 0px 0px 1px $color4, 5px 5px 0px $trueBlack;
+    
     padding: 0;
 }
 
@@ -14,28 +17,98 @@ h2 {
     font-size: 3em;
     font-family: $mainFont;
     font-weight: 400;
+    color: $color4;
+    
+    text-shadow: 0px 0px 1px $color4, 3px 3px 0px $trueBlack;
 }
 
 h3 {
     font-size: 2.5em;
     font-family: $mainFont;
+    color: $color3;
+    text-shadow: 0px 0px 1px $color3, 2px 2px 0px $trueBlack;
+    
+    border-left: 3px solid $color2;
+    border-bottom: 3px solid $color2;
+    border-radius: 0 0 0 10px;
+    box-shadow: inset 1px -1px 1px $color2, 0px 2px 0px $trueBlack;
+    
+    padding: 0 0 3px 10px;
+    margin: 15px;
 }
 
 h4 {
     font-size: 2em;
     font-family: $mainFont;
+    font-style: italic;
+    color: $color4;
+    text-shadow: 0px 0px 1px $color4, 2px 2px 0px $trueBlack;
+    
+    margin: 10px 10px 10px 30px;
 }
 
 h5 {
-    font-size: .5em;
+    font-size: 2em;
+    font-family: $mainFont;
+    font-weight: 400;
+    color: $color2;
+    text-shadow: 0px 0px 1px $color2, 2px 2px 0px $trueBlack;
+    
+    margin: 5px;
 }
 
 h6 {
     font-size: .2em;
+    color: $color4;
 }
 
 p {
     text-align: justify;
     font-family: $textFont;
-    line-height: 2em;
+    font-size: 1.5em;
+    color: $color4;
+    text-shadow: 2px 2px 0px $trueBlack;
+}
+
+a {
+    text-decoration: none;
+    color: $color3;
+    font-family: $mainFont;
+    font-size: 2em;
+    text-shadow: 0px 0px 1px $color3, 2px 2px 0px $trueBlack;
+
+    transition: color .5s, border .2s;
+    
+    padding: 5px;
+}
+    
+a:hover {
+    color: $color4;
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+    
+    h4 {
+        font-size: 1em;
+    }
+    
+    p {
+        font-size: 1em;
+        text-shadow: none;
+    }
+    
+    a {
+        font-size: 1em;
+    }
 }

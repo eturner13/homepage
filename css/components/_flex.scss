@@ -1,7 +1,8 @@
 .flexHorz {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .flexVert {
@@ -9,4 +10,10 @@
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 500px) {
+    .flexHorz {
+        flex-flow: column;
+    }
 }
