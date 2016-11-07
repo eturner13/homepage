@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h2 Edit post
+  h5 title
+  input(ng-model='form.title')
+  h5 Body
+  textarea(ng-model='form.body', cols='100', rows='15')
+  p
+  button(ng-click='submitPost()') Add Post

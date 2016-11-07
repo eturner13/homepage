@@ -1,4 +1,4 @@
-var app = angular.module("homepage", ["ngRoute", "ngAnimate"]);
+var app = angular.module("homepage", ["ngRoute", "ngAnimate", "ngSanitize"]);
 
 app.controller('app', function($scope, $location, $http) {
 
@@ -24,6 +24,10 @@ app.config(function($routeProvider, $locationProvider) {
     .when("/blog/:id", {
       templateUrl: "/blogPost",
       controller: "readPost"
+    })
+    .when("blog/addPost", {
+      templateUrl: "/addPost",
+      controller: "addPost"
     })
     .otherwise({
       redirectTo: "/"

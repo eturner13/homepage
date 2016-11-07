@@ -4,7 +4,8 @@ var router = express.Router();
 var Schema = mongoose.Schema;
 
 //Database setup
-mongoose.connect('mongodb://eturner:eturner13@ds015750.mlab.com:15750/heroku_wxczqc76');
+//mongoose.connect('mongodb://eturner:eturner13@ds015750.mlab.com:15750/heroku_wxczqc76');
+mongoose.connect('mongodb://localhost/blog');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
@@ -35,6 +36,14 @@ router.get('/blog/posts', function (req, res){
       return console.log(err);
     }
   });
+});
+
+router.get('/blog/addPost', function(req, res) {
+  res.render('addPost');
+});
+
+router.post('blog/addPost', function(req, res) {
+  new Post({title: req.body.title, author: req.body.body}).save();
 });
 
 router.get('/blog/:id', function (req, res){
