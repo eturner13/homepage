@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .contentWrapper.flexHorz
+    .blackCont.nav
+      h3 NAV
+      h4 {{posts.length + 1}} blog posts
+      .textCont
+        a(href="/") About Me
+        div(ng-repeat="post in posts | orderBy: '-created_at'")
+          a(href="/blog/{{post._id}}") {{post.title}} | {{post.date | date:'M.d.y'}}
+    .content
+      div(ng-view)
