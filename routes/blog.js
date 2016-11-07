@@ -4,7 +4,7 @@ var router = express.Router();
 var Schema = mongoose.Schema;
 
 //Database setup
-mongoose.connect('mongodb://localhost/blog');
+mongoose.connect('mongodb://eturner:eturner@ds015750.mlab.com:15750/heroku_wxczqc76');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
