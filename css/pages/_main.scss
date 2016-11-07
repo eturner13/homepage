@@ -1,0 +1,20 @@
+@import "../modules/colors";
+
+.summary {
+    max-width: 50%;
+}
+
+.photo {
+    background: url("../resources/images/egt.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 40%;
+    max-width: 494px;
+    height: auto;
+    
+    margin: 30px;
+}
+
+.sideBy {
+    width: 50%;
+}
