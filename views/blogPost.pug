@@ -2,4 +2,4 @@
   h3 {{post.title}}
   h4 {{post.date | date:'MMMM d, y'}}
   .textCont
-    p(ng-bind-html='post.body')
+    div(ng-bind-html='post.body')
