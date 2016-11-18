@@ -2,9 +2,9 @@ extends layout
 
 block content
   h2 Edit post
-  h5 title
-  input(ng-model='form.title')
-  h5 Body
-  textarea(ng-model='form.body', cols='100', rows='15')
-  p
-  button(ng-click='submitPost()') Add Post
+  form(novalidate)
+    h6 Title
+    input(type='text', ng-model='entry.title')
+    h6 Body
+    textarea(ng-model='entry.body', cols='100', rows='15')
+    button(ng-click='submitPost()') Add Post

@@ -1,16 +1,21 @@
 var app = angular.module("homepage", ["ngRoute", "ngAnimate", "ngSanitize"]);
 
-app.controller('app', function($scope, $location, $http) {
-
-  $http.get('/blog/posts').
+app.controller('app', function($scope, $http, $window) {
+  $http.get('/api/posts').
     then(function(response) {
       $scope.posts = response.data;
     });
+  $scope.entry = {title:"Add a title", body:"Insert a body; Use backslash to escape HTML closing tags"};
+  $scope.submitPost = function () {
+    $http.post('/api/addPost', $scope.entry).
+    then(function() {
+      $window.location.href = '/';
+    })
+  };
 });
 
 app.controller('readPost', function($scope, $http, $routeParams) {
-
-  $http.get('/blog/' + $routeParams.id).
+  $http.get('/api/' + $routeParams.id).
     then(function(response) {
       $scope.post = response.data;
     });
@@ -21,13 +26,12 @@ app.config(function($routeProvider, $locationProvider) {
     .when("/", {
       templateUrl: "/about"
     })
-    .when("/blog/:id", {
+    .when("/:id", {
       templateUrl: "/blogPost",
       controller: "readPost"
     })
-    .when("blog/addPost", {
-      templateUrl: "/addPost",
-      controller: "addPost"
+    .when("/addPost", {
+      templateUrl: "/addPost"
     })
     .otherwise({
       redirectTo: "/"

@@ -8,6 +8,6 @@ block content
       .textCont
         a(href="/") About Me
         div(ng-repeat="post in posts | orderBy: '-created_at'")
-          a(href="/blog/{{post._id}}") {{post.title}} | {{post.date | date:'M.d.y'}}
+          a(href="/{{post._id}}") {{post.title}}
     .content
       div(ng-view)

@@ -27,6 +27,10 @@
 .content {
   width: 950px; }
 
+@media only screen and (max-width: 1240px) {
+  .nav {
+    width: 908px; } }
+
 .flexHorz {
   display: flex;
   justify-content: center;
@@ -150,9 +154,6 @@ a:hover {
 .ng-enter {
   animation: fadeIn .5s; }
 
-.ng-leave {
-  animation: fadeOut .1s; }
-
 header {
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjNjE2MTYxIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIxMjEyMSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIxMjEyMSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg=="); }
   header .cover {
@@ -164,31 +165,9 @@ header {
   header .links {
     justify-content: space-around; }
 
-footer {
-  background-color: #212121;
-  border-top: 2px solid #616161;
-  padding: 10px;
-  margin: 0px;
-  bottom: 0; }
-
 body {
   box-sizing: border-box;
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjMjEyMTIxIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMwMzAzMCIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzMwMzAzMCIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg==");
   overflow-y: scroll;
   margin: 0px;
   padding: 0px; }
-
-.summary {
-  max-width: 50%; }
-
-.photo {
-  background: url("../images/egt.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-width: 40%;
-  max-width: 494px;
-  height: auto;
-  margin: 30px; }
-
-.sideBy {
-  width: 50%; }
