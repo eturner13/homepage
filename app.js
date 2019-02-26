@@ -10,7 +10,7 @@ var Schema = mongoose.Schema;
 var app = express();
 
 //Database setup
-mongoose.connect('mongodb://heroku_wxczqc76:imjk7b86pchakedhjrt1rsquro@ds015750.mlab.com:15750/heroku_wxczqc76');
+mongoose.connect(process.env.MONGO_URL);
 //mongoose.connect('mongodb://localhost/blog/');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
